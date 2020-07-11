@@ -9,3 +9,12 @@ print "\n"
 c = names.select {|x| x.include? 'P'}
 print c 
 print "\n"
+d = names.count do |x|
+    x.include?('A') || x.include?('B')|| x.include?('C')
+    end
+print d 
+print "\n"
+e = names.map {|x| x.length}
+print e 
+print "\n"
+
